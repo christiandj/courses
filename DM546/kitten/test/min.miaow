@@ -1,0 +1,6 @@
+# Returns the lowest value
+function min(a, b)
+  if a < b then return a;
+  return b;
+end
+write min(10, 20);

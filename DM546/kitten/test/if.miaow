@@ -1,0 +1,3 @@
+if 1 < 2 then write 1;
+if 1 = 2 then write 2;
+if 1 > 2 then write 3;

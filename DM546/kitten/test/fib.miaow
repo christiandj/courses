@@ -1,0 +1,6 @@
+# Computes the n'th Fibonacci number
+function fib(n)
+  if n < 2 then return n;
+  return fib(n - 1) + fib(n - 2);
+end
+write fib(10);

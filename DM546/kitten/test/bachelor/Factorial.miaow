@@ -1,0 +1,8 @@
+# Code generation, realistic example of recursive code
+# Based on the example program O_Factorial from the bachelor project in compiler construction
+function factorial(n)
+  if n = 0 or n = 1 then
+    return 1;
+  return n * factorial(n - 1);
+end
+write factorial(5);

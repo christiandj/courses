@@ -1,0 +1,24 @@
+# Returns 1 if and only if the number is even
+function even(n)
+  if n = 0 then return 1;
+  if n = 1 then return 0;
+  return even(n - 2);
+end
+# Computes positive integer logarithm of a number
+function log(n, x)
+  k := 0;
+  i := n;
+  loop {
+    if even(i) = 0 then {
+      i -= 1;
+    }
+    if even(i) = 1 then {
+      i /= x;
+      k += 1;
+    }
+    if i <= 1 then break;
+  }
+  return k;
+end
+# Computes log2(1024)
+write log(1024, 2);

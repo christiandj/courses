@@ -1,0 +1,12 @@
+# From the project description
+i := 0;
+odd := 0;
+sum := 0;
+loop {
+  i := i + 1;
+  odd := 1 - odd;
+  if odd = 1 then continue;
+  sum := sum + i;
+  if sum >= 40 then break;
+}
+write sum; # added to verify the result

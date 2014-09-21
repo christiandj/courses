@@ -1,0 +1,5 @@
+# Scanner, test of line comments
+# Based on the example program O_Comments from the bachelor project in compiler construction
+# Simpel test af enkeltlinjekommentarer
+write 42;
+write 42; # slut med testen

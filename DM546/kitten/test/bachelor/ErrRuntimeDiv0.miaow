@@ -1,0 +1,9 @@
+# Runtime check, division by zero, should fail if checked
+# Based on the example program R_ErrRuntimeDiv0 from the bachelor project in compiler construction
+function echo(i, j)
+  if j = 0 then
+    return i;
+  return echo(i, j - 1);
+end
+dummy := echo(0, 3);
+write 3 / dummy;

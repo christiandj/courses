@@ -1,0 +1,7 @@
+# Returns the non-negative value of x
+function abs(x)
+  if x >= 0 then return x;
+  if x < 0 then return -x;
+end
+write abs(42);
+write abs(-42);

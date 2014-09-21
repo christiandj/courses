@@ -1,0 +1,4 @@
+# Scanner, invalid tokens should not be allowed
+# Based on the example program C_ErrInvalidToken from the bachelor project in compiler construction
+@
+write 42;

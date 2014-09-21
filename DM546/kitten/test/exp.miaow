@@ -1,0 +1,16 @@
+# Returns 1 if and only if the number is even
+function even(n)
+  if n = 0 then return 1;
+  if n = 1 then return 0;
+  return even(n - 2);
+end
+# Computes positive integer powers of a number
+function exp(x, n)
+  if n < 0 then return exp(1 / x, -n);
+  if n = 0 then return 1;
+  if n = 1 then return x;
+  if even(n) = 1 then return exp(x * x, n / 2);
+  return x * exp(x * x, (n - 1) / 2);
+end
+# Computes 2^10
+write exp(2, 10);

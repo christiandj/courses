@@ -1,0 +1,21 @@
+# No parameter
+function none()
+  return 0;
+end
+# One parameter
+function one(a)
+  return a;
+end
+# Two parameters
+function two(a, b)
+  return a + b;
+end
+# Three parameters
+function three(a, b, c)
+  return a + b + c;
+end
+# Function calls
+write none();
+write one(1);
+write two(1, 2);
+write three(1, 2, 3);

@@ -1,0 +1,11 @@
+# From the project description
+function factorial(n)
+  r := 1;
+  if n > 1 then
+    r := n * factorial(n - 1);
+  sum := sum + r;
+  return r;
+end
+sum := 0;
+write(factorial(5)); # writes 120
+write(sum); # writes 153
